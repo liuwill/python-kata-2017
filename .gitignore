@@ -5,3 +5,5 @@ venv
 .cache
 *.egg-info
 .tox
+.coverage
+coverage.xml

@@ -11,6 +11,7 @@ setup(
         'tox',
         'coverage>=4.4.1',
         'pytest>=3.1.3',
+        'pytest-cov',
         'pylint==1.6.5'
     ],
     packages=["kata"],

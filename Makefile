@@ -4,4 +4,10 @@ install-env:
 test:
 	python setup.py test
 
+test-cov:
+	py.test -xv --cov=kata
+
+test-coverage:
+	coverage run -m pytest
+
 .PHONY: test
