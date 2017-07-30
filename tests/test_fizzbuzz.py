@@ -10,3 +10,6 @@ def test_fizz():
 
 def test_Buzz():
     assert simple_translator.translator(5) == "Buzz"
+
+def test_FizzBuzz():
+    assert simple_translator.translator(3*5) == "FizzBuzz"
