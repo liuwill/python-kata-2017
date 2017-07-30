@@ -4,6 +4,7 @@ from kata.fizzbuzz import simple_translator
 def test_origin():
     assert simple_translator.translator(1) == "1"
     assert simple_translator.translator(2) == "2"
+    assert simple_translator.translator(4) == "4"
 
 def test_fizz():
     assert simple_translator.translator(3) == "Fizz"

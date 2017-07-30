@@ -1,11 +1,17 @@
 def translator(origin):
-    result = str(origin)
+    result = ""
 
-    if origin % 3 == 0 and origin % 5 == 0:
-        result = "FizzBuzz"
-    elif origin % 3 == 0:
+    if isFizz(origin):
         result = "Fizz"
-    elif origin % 5 == 0:
-        result = "Buzz"
+    if isBuzz(origin):
+        result += "Buzz"
 
+    if result == "":
+        result = str(origin)
     return result
+
+def isFizz(origin):
+    return origin % 3 == 0
+
+def isBuzz(origin):
+    return origin % 5 == 0
