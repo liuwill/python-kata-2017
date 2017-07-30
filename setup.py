@@ -8,7 +8,7 @@ setup(
     author_email='liuwill@live.com',
     url='http://www.liuwill.com',
     install_requires=[
-        'tox>=2.7.0',
+        'tox',
         'coverage>=4.4.1',
         'pytest>=3.1.3',
         'pylint==1.6.5'
