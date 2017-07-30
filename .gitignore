@@ -7,3 +7,5 @@ venv
 .tox
 .coverage
 coverage.xml
+*/**/.gitignore
+*/**/*.pyc
