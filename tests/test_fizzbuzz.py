@@ -1,5 +1,6 @@
 
 from kata.fizzbuzz import simple_translator
+from kata.fizzbuzz import template_translator
 
 def test_origin():
     assert simple_translator.translator(1) == "1"
@@ -14,3 +15,6 @@ def test_Buzz():
 
 def test_FizzBuzz():
     assert simple_translator.translator(3*5) == "FizzBuzz"
+
+def test_template_FizzBuzz():
+    assert template_translator.translator(30) == "FizzBuzz"
