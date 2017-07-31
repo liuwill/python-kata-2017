@@ -18,3 +18,12 @@ def test_FizzBuzz():
 
 def test_template_FizzBuzz():
     assert template_translator.translator(30) == "FizzBuzz"
+
+def test_template_fizz():
+    assert template_translator.translator(6) == "Fizz"
+
+def test_template_Buzz():
+    assert template_translator.translator(10) == "Buzz"
+
+def test_template_origin():
+    assert template_translator.translator(8) == "8"
