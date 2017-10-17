@@ -12,6 +12,7 @@ setup(
         'coverage>=4.4.1',
         'pytest>=3.1.3',
         'pytest-cov',
+        'pytest-bdd',
         'pylint==1.6.5'
     ],
     packages=["kata"],
