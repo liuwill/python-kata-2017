@@ -1,6 +1,7 @@
 
 from kata.fizzbuzz import simple_translator
 from kata.fizzbuzz import template_translator
+from kata.fizzbuzz import rulable_translator
 
 def test_origin():
     assert simple_translator.translator(1) == "1"
@@ -27,3 +28,11 @@ def test_template_Buzz():
 
 def test_template_origin():
     assert template_translator.translator(8) == "8"
+
+def test_rule_class():
+    class SelfRule(rulable_translator.Rulable):
+        def handle(self, result, origin):
+            return origin + result
+
+    myRule = SelfRule()
+    assert myRule.handle(1, 2) == 1 + 2
