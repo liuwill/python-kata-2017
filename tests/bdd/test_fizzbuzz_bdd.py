@@ -14,7 +14,7 @@ def test_outlined():
 
 @given('fizz buzz table')
 def start_cucumbers():
-    print 'Start FizzBuzz'
+    print('Start FizzBuzz')
 
 
 @when('we have <num> input')
