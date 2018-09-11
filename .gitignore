@@ -10,3 +10,4 @@ coverage.xml
 */**/.gitignore
 */**/*.pyc
 demo
+.pytest_cache/
